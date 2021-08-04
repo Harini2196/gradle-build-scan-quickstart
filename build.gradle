@@ -10,8 +10,8 @@ repositories {
 }
 sonarqube {
     properties {
-        properties["sonar.sources"] += sourceSets.custom.allSource.srcDirs
-        properties["sonar.tests"] += sourceSets.integTest.allSource.srcDirs
+        properties["sonar.sources"] += src/
+        properties["sonar.tests"] += test/
     }
 }
 dependencies {
