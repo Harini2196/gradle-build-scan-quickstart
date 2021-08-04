@@ -11,7 +11,7 @@ repositories {
 sonarqube {
     properties {
         properties["sonar.sources"] += ["src/"]
-        properties["sonar.tests"] += ["test/"]
+        properties["sonar.tests"] += ["src/test/"]
     }
 }
 dependencies {
