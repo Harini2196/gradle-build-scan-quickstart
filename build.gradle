@@ -8,7 +8,12 @@ plugins {
 repositories {
     mavenCentral()
 }
-
+sonarqube {
+    properties {
+        properties["sonar.sources"] += sourceSets.custom.allSource.srcDirs
+        properties["sonar.tests"] += sourceSets.integTest.allSource.srcDirs
+    }
+}
 dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
     testImplementation 'junit:junit:4.13.1'
