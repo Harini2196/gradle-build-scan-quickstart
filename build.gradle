@@ -8,12 +8,12 @@ plugins {
 repositories {
     mavenCentral()
 }
-sonarqube {
+/*sonarqube {
     properties {
         properties["sonar.sources"] += ["src/"]
         properties["sonar.tests"] += ["build/reports/"]
     }
-}
+}*/
 dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
     testImplementation 'junit:junit:4.13.1'
